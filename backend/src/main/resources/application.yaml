@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+<<<<<<< HEAD
+    url: jdbc:mysql://localhost:3306/trosmart?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Ho_Chi_Minh&characterEncoding=UTF-8
+    username: root
+    password: 10052901
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+=======
+    url: jdbc:mysql://localhost:3306/trosmart?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: 123456
+>>>>>>> 62822aebeebccacc16e34fe8f0de78a268793c95
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+app:
+  jwt:
+    secret: trosmart-super-secret-key-256-bits-long-enough
+    expiration-ms: 86400000
+    refresh-expiration-days: 7
+  upload:
+    base-dir: uploads
+<<<<<<< HEAD
+  base-url: http://localhost:8081
+
+logging:
+  level:
+    com.trosmart: DEBUG
+    org.springframework.security: WARN
+=======
+  base-url: http://localhost:8081
+>>>>>>> 62822aebeebccacc16e34fe8f0de78a268793c95

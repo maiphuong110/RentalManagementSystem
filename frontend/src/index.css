@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+/* ===== TroSmart Theme ===== */
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  /* Primary - Red (#dc322a) */
+  --color-primary-50: #fff5f5;
+  --color-primary-100: #ffe3e3;
+  --color-primary-200: #ffc9c9;
+  --color-primary-300: #ffa8a8;
+  --color-primary-400: #ff8787;
+  --color-primary-500: #ff6b6b;
+  --color-primary-600: #dc322a;
+  --color-primary-700: #b82820;
+  --color-primary-800: #9c201a;
+  --color-primary-900: #7a1612;
+
+  /* Accent - Emerald */
+  --color-accent-50: #ecfdf5;
+  --color-accent-100: #d1fae5;
+  --color-accent-400: #34d399;
+  --color-accent-500: #10b981;
+  --color-accent-600: #059669;
+  --color-accent-700: #047857;
+
+  /* Warning - Amber */
+  --color-warning-50: #fffbeb;
+  --color-warning-400: #fbbf24;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+
+  /* Danger - Rose */
+  --color-danger-50: #fff1f2;
+  --color-danger-400: #fb7185;
+  --color-danger-500: #f43f5e;
+  --color-danger-600: #e11d48;
+
+  /* Surface colors */
+  --color-surface-50: #f8fafc;
+  --color-surface-100: #f1f5f9;
+  --color-surface-200: #e2e8f0;
+  --color-surface-300: #cbd5e1;
+  --color-surface-400: #94a3b8;
+  --color-surface-500: #64748b;
+  --color-surface-600: #475569;
+  --color-surface-700: #334155;
+  --color-surface-800: #1e293b;
+  --color-surface-900: #0f172a;
+}
+
+/* ===== Base Styles ===== */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface-50);
+  color: var(--color-surface-900);
+}
+
+/* ===== Custom Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-300);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-surface-400);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-16px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+.animate-slide-in-left {
+  animation: slideInLeft 0.3s ease-out forwards;
+}
+.animate-scale-in {
+  animation: scaleIn 0.2s ease-out forwards;
+}
+
+/* ===== Owner Theme Override ===== */
+.owner-theme {
+  --color-primary-50: #f0f7fb;
+  --color-primary-100: #e0f0fa;
+  --color-primary-200: #bde0f5;
+  --color-primary-300: #85c2ea;
+  --color-primary-400: #4ba2df;
+  --color-primary-500: #2384c5;
+  --color-primary-600: #0a6fa2; /* Core blue theme from mockup */
+  --color-primary-700: #0e6496;
+  --color-primary-800: #0f547c;
+  --color-primary-900: #124767;
+}

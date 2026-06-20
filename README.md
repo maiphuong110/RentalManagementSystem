@@ -1,4 +1,4 @@
-# 🏠 RENT+ — A Comprehensive Web-Based Accommodation Management System
+# A Comprehensive Web-Based Accommodation Management System
 
 > **CS3332 – Software Engineering** | Hanoi University of Science and Technology
 
@@ -11,7 +11,7 @@
 
 ---
 
-## 📋 Overview
+## Overview
 
 **RENT+** is a full-stack web application designed to digitize and streamline the entire room rental management process in Vietnam. The system eliminates paper-based management by providing a unified platform for two distinct user roles:
 
@@ -22,14 +22,14 @@
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 | Technology | Version | Purpose |
 |-----------|---------|---------|
 | Java | 21 | Core language |
-| Spring Boot | 3.5.x | Application framework |
-| Spring Security | 6.x | Authentication & Authorization |
+| Spring Boot | 3.5.11 | Application framework |
+| Spring Security | Latest 6.x | Authentication & Authorization |
 | Spring Data JPA + Hibernate | — | ORM & Database access |
 | jjwt | 0.12.5 | JWT token generation & validation |
 | Lombok | 1.18.32 | Boilerplate code reduction |
@@ -40,17 +40,17 @@
 ### Frontend
 | Technology | Version | Purpose |
 |-----------|---------|---------|
-| React | 19.x | UI framework (SPA) |
-| Vite | 7.x | Build tool & dev server |
-| React Router DOM | 7.x | Client-side routing |
-| Axios | 1.x | HTTP client for REST API |
-| Tailwind CSS | 4.x | Utility-first CSS framework |
-| Chart.js + react-chartjs-2 | 4.x / 5.x | Data visualization charts |
-| Lucide React | 1.x | Icon library |
+| React | 19.2.0 | UI framework (SPA) |
+| Vite | 7.3.1 | Build tool & dev server |
+| React Router DOM | Latest 6.x | Client-side routing |
+| Axios | 1.13.6 | HTTP client for REST API |
+| Tailwind CSS | 4.2.1 | Utility-first CSS framework |
+| Chart.js + react-chartjs-2 | 4.5.1 / 5.3.1 | Data visualization charts |
+| Lucide React | 1.17.0 | Icon library |
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 Project_CS332/
@@ -145,7 +145,7 @@ Project_CS332/
 
 ---
 
-## 🚀 Getting Started (Local Setup)
+## Getting Started (Local Setup)
 
 ### Prerequisites
 
@@ -299,7 +299,7 @@ PUT    /api/v1/notifications/{id}/read ← Mark as read
 
 ---
 
-## 🌐 Deployment
+##  Deployment
 
 ### Backend → Railway
 ```bash
@@ -330,7 +330,7 @@ Set environment variable in Vercel dashboard:
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 # Backend unit tests
@@ -345,7 +345,7 @@ start target/surefire-reports/index.html
 
 ---
 
-## 🌿 Git Workflow
+## Git Workflow
 
 ```bash
 # Clone the repository
@@ -374,21 +374,16 @@ fix/*       ← Bug fix branches
 
 ---
 
-## 👥 Team Contributions
+## Team Contributions
 
-| Member | Role | Responsibilities |
-|--------|------|-----------------|
-| M1 | Backend Lead | Security config, Entity models, JPA repositories, Database schema |
-| M2 | Backend Dev | Auth module, Room & Property controllers/services, DTOs |
-| M3 | Backend Dev | Bill, Contract, Post controllers/services, DTOs |
-| M4 | Frontend Dev | Auth context, Login page, Owner pages (Rooms, Bills, Contracts) |
-| M5 | Frontend Lead | Dashboard, Tenant pages, API layer, Chat integration, README |
+| Member         | Role         | Responsibilities |
+|----------------|--------------|-----------------|
+| Dam Quang Trung| Backend Lead | Security config, Entity models, JPA repositories, Database schema |
+| Nguyen Thai Duong | Backend Dev | Auth module, Room & Property controllers/services, DTOs |
+| Bui Mai Phuong | Backend Dev | Bill, Contract, Post controllers/services, DTOs |
+| Tran Yen Nhi | Frontend Dev | Auth context, Login page, Owner pages (Rooms, Bills, Contracts) |
+| Bui Hoang Ngan Anh | Frontend Lead | Dashboard, Tenant pages, API layer, Chat integration, README |
 
----
-
-## 📬 Postman Collection
-
-A Postman collection is available in the `/postman` directory. Import it into Postman to quickly test all API endpoints with pre-configured requests and environment variables.
 
 ---
 
